@@ -73,13 +73,13 @@ function drawLetter(posx, posy, letterData) {
   let pos2x = posx + letterData["offsetx"];
   let pos2y = posy + letterData["offsety"];
 
-  // draw two circles
+  // draw letters
   strokeWeight(4);
   fill(darkGreen);
   square(posx, posy, squareSize);
   fill(lightGreen);
-  strokeWeight(20);
-  line(pos2x, pos2y, posx+20, posy);
+  strokeWeight(10);
+  line(pos2x-20, pos2y, posx, posy);
 }
 
 function keyTyped() {
