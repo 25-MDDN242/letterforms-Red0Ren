@@ -21,15 +21,22 @@ function drawLetter(letterData) {
   strokeWeight(4);
 
   // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = 50  + letterData["offsetx"];
+  // let size2 = letterData["size"];
+  // let pos2x = 50  + letterData["offsetx"];
+  // let pos2y = 150 + letterData["offsety"];
+  let squareSize = letterData["size"];
+  let pos2x = 50 + letterData["offsetx"];
   let pos2y = 150 + letterData["offsety"];
+  let lineStartx = letterData["startX"];
+  let lineStartY = letterData["startY"];
 
-  // draw two circles
+  // draw letters
+  strokeWeight(4);
   fill(darkGreen);
-  ellipse(50, 150, 75, 75);
+  square(50, 250, squareSize);
   fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
+  strokeWeight(10);
+  line(50+lineStartx, 150+lineStartY, pos2x, pos2y+90);
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
