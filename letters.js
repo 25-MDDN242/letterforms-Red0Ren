@@ -7,21 +7,23 @@ const alphabet = {
   "A": {
     "size": 0,
     "startX": 0,
-    "startY": -140,
+    "startY": -120,
     "offsetx": 0,
-    "offsety": -50
+    "offsety": -80
   },
   "B": {
-    "size": 100,
-  "startX": -80,
-  "startY": -80,
-  "offsetx": 80,
-  "offsety": -10
+    "size": 70,
+    "startX": -5,
+    "startY": -95,
+    "offsetx": 95,
+    "offsety": -95
   },
   "C": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "size": 70,
+    "startX": 0,
+    "startY": -50,
+    "offsetx": 100,
+    "offsety": -140
   },
   "D": {
     "size": 50,

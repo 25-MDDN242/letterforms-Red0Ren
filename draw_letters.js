@@ -30,10 +30,13 @@ function drawLetter(letterData) {
   let lineStartx = letterData["startX"];
   let lineStartY = letterData["startY"];
 
+  // Set rect mode to CENTER
+  rectMode(CENTER);
+
   // draw letters
   strokeWeight(4);
   fill(darkGreen);
-  square(50, 250, squareSize);
+  square(100, 100, squareSize);
   fill(lightGreen);
   strokeWeight(10);
   line(50+lineStartx, 150+lineStartY, pos2x, pos2y+90);
