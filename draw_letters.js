@@ -16,19 +16,26 @@ const strokeColor  = "#0a2d27";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
+  push();
   // color/stroke setup
   stroke(strokeColor);
   strokeWeight(4);
 
   // determine parameters for second circle
-  // let size2 = letterData["size"];
-  // let pos2x = 50  + letterData["offsetx"];
-  // let pos2y = 150 + letterData["offsety"];
   let squareSize = letterData["size"];
-  let pos2x = 50 + letterData["offsetx"];
-  let pos2y = 150 + letterData["offsety"];
-  let lineStartx = letterData["startX"];
-  let lineStartY = letterData["startY"];
+
+  let line1_W = letterData["1_lineW"];
+  let line1_startX = letterData["1_startX"];
+  let line1_startY = letterData["1_startY"];
+  let line1_endX = letterData["1_endX"];
+  let line1_endY = letterData["1_endY"];
+  
+  let line2_W = letterData["2_lineW"];
+  let line2_startX = letterData["2_startX"];
+  let line2_startY = letterData["2_startY"];
+  let line2_endX = 50 + letterData["2_endX"];
+  let line2_endY = 150 + letterData["2_endY"];
+  
 
   // Set rect mode to CENTER
   rectMode(CENTER);
@@ -36,17 +43,20 @@ function drawLetter(letterData) {
   // draw letters
   strokeWeight(4);
   fill(darkGreen);
-  square(100, 100, squareSize);
+  square(50, 100, squareSize);
   fill(lightGreen);
-  strokeWeight(10);
-  line(50+lineStartx, 150+lineStartY, pos2x, pos2y+90);
+  strokeWeight(line1_W);
+  line(line1_startX, line1_startY, line1_endX, line1_endY);
+  strokeWeight(line2_W);
+  line(line2_startX, line2_startY, line2_endX, line2_endY);
+  pop();
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
   new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
-  new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
-  new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
+  new_letter["1_endX"] = map(percent, 0, 100, oldObj["1_endX"], newObj["1_endX"]);
+  new_letter["1_endY"] = map(percent, 0, 100, oldObj["1_endY"], newObj["1_endY"]);
   return new_letter;
 }
 
