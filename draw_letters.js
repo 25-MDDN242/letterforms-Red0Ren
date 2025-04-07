@@ -21,8 +21,11 @@ function drawLetter(letterData) {
   stroke(strokeColor);
   strokeWeight(4);
 
-  // determine parameters for second circle
+  // Square parameters
   let squareSize = letterData["size"];
+  let squareDegree = letterData["degree"];
+  let squareX = letterData["squareX"];
+  let squareY = letterData["squareY"];
 
   let line1_W = letterData["1_lineW"];
   let line1_startX = letterData["1_startX"];
@@ -33,18 +36,24 @@ function drawLetter(letterData) {
   let line2_W = letterData["2_lineW"];
   let line2_startX = letterData["2_startX"];
   let line2_startY = letterData["2_startY"];
-  let line2_endX = 50 + letterData["2_endX"];
-  let line2_endY = 150 + letterData["2_endY"];
+  let line2_endX = letterData["2_endX"];
+  let line2_endY = letterData["2_endY"];
+  
   
 
-  // Set rect mode to CENTER
+  // Set modes
   rectMode(CENTER);
+  angleMode(DEGREES);
 
   // draw letters
+  // Square
+  push(); // isolate transformations
+  rotate(squareDegree);
   strokeWeight(4);
   fill(darkGreen);
-  square(50, 100, squareSize);
-  fill(lightGreen);
+  square(squareX, squareY, squareSize);
+  pop();
+  // Lines
   strokeWeight(line1_W);
   line(line1_startX, line1_startY, line1_endX, line1_endY);
   strokeWeight(line2_W);
