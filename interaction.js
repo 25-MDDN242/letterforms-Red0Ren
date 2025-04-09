@@ -40,11 +40,11 @@ function setup () {
   // noLoop();
 }
 
-function mouseClicked() {
-  debugBox = !debugBox;
-  // console.log("debugBox is now: " + debugBox);
-  redraw();
-}
+// function mouseClicked() {
+//   debugBox = !debugBox;
+//   // console.log("debugBox is now: " + debugBox);
+//   redraw();
+// }
 
 const interpolation_is_on = (typeof interpolate_letter === "function")
 
