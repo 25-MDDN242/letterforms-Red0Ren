@@ -14,3 +14,7 @@ The three parameters per letter:
 10/04/25 - 0947-1134
 - Created 'o' 'p' 'q' 'r' 's' 't' 'u' 'v' 'w' 'x'
   - struggling with 'y'
+
+15/04/25 - 1850-2312
+- created 'y' 'z'
+- need to design letters
