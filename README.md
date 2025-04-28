@@ -18,3 +18,11 @@ The three parameters per letter:
 15/04/25 - 1850-2312
 - created 'y' 'z'
 - need to design letters
+
+29/04/25 - 0930-1045
+completed:
+- created interpolaation
+next:
+- design numbers
+- personalise colours
+- edit interpolation
