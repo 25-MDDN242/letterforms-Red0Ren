@@ -1,15 +1,41 @@
 const alphabet = {
   "default": {
-    "size": 40,
+    // Square
+    "size": 70,
+    "degree": 0,
+    "squareX": 50,
+    "squareY": 100,
+    // Line 1
+    "1_lineW": 20,
+    "1_startX": 12,
+    "1_startY": 125,
     "1_endX": 0,
-    "1_endY": 0
+    "1_endY": 120,
+    // Line 2
+    "2_lineW": 10,
+    "2_startX": 30,
+    "2_startY": 135,
+    "2_endX": 30,
+    "2_endY": 155,
+    // Line 3
+    "3_lineW": 10,
+    "3_startX": 70,
+    "3_startY": 135,
+    "3_endX": 70,
+    "3_endY": 155,
+    // Line 4
+    "4_lineW": 10,
+    "4_startX": 88,
+    "4_startY": 132,
+    "4_endX": 98,
+    "4_endY": 132,
   },
   "A": {
     // Square
     "size": 0,
     "degree": 0,
-    "squareX": 0,
-    "squareY": 0,
+    "squareX": 50,
+    "squareY": 100,
     // Line 1
     "1_lineW": 10,
     "1_startX": 50,
@@ -18,22 +44,22 @@ const alphabet = {
     "1_endY": 170,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 500,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 500,
+    "2_endX": 100,
     "2_endY": 0,
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
     "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "B": {
     // Square
@@ -54,17 +80,18 @@ const alphabet = {
     "2_endX": 100,
     "2_endY": 0,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "C": {
     // Square
@@ -80,22 +107,23 @@ const alphabet = {
     "1_endY": 100,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "D": {
     // Square
@@ -111,29 +139,30 @@ const alphabet = {
     "1_endY": 170,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "E": {
     // Square
     "size": 0,
     "degree": 0,
-    "squareX": 0,
-    "squareY": 0,
+    "squareX": 50,
+    "squareY": 100,
     // Line 1
     "1_lineW": 10,
     "1_startX": 50,
@@ -147,17 +176,18 @@ const alphabet = {
     "2_endX": 50,
     "2_endY": 170,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "F": {
     // Square
@@ -167,24 +197,29 @@ const alphabet = {
     "squareY": 100,
     // Line 1
     "1_lineW": 0,
+    "1_startX": 0,
+    "1_startY": 0,
+    "1_endX": 0,
+    "1_endY": 0,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "G": {
     // Square
@@ -200,22 +235,23 @@ const alphabet = {
     "1_endY": 100,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "H": {
     // Square
@@ -236,24 +272,25 @@ const alphabet = {
     "2_endX": 85,
     "2_endY": 170,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "I": {
     // Square
     "size": 0,
     "degree": 0,
-    "squareX": 0,
-    "squareY": 0,
+    "squareX": 50,
+    "squareY": 100,
     // Line 1
     "1_lineW": 10,
     "1_startX": 70,
@@ -267,17 +304,18 @@ const alphabet = {
     "2_endX": 50,
     "2_endY": 170,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "J": {
     // Square
@@ -293,22 +331,23 @@ const alphabet = {
     "1_endY": 170,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "K": {
     // Square
@@ -329,17 +368,18 @@ const alphabet = {
     "2_endX": 95,
     "2_endY": 150,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "L": {
     // Square
@@ -349,24 +389,29 @@ const alphabet = {
     "squareY": 35,
     // Line 1
     "1_lineW": 0,
+    "1_startX": 0,
+    "1_startY": 0,
+    "1_endX": 0,
+    "1_endY": 0,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "M": {
     // Square
@@ -387,17 +432,18 @@ const alphabet = {
     "2_endX": 50,
     "2_endY": 100,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "N": {
     // Square
@@ -413,29 +459,30 @@ const alphabet = {
     "1_endY": 130,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "O": {
     // Square
     "size": 0,
     "degree": 0,
-    "squareX": 0,
-    "squareY": 0,
+    "squareX": 50,
+    "squareY": 100,
     // Line 1
     "1_lineW": 10,
     "1_startX": 70,
@@ -475,22 +522,23 @@ const alphabet = {
     "1_endY": 180,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "Q": {
     // Square
@@ -506,22 +554,23 @@ const alphabet = {
     "1_endY": 150,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "R": {
     // Square
@@ -543,17 +592,18 @@ const alphabet = {
     "2_endX": 82,
     "2_endY": 130,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "S": {
     // Square
@@ -574,17 +624,18 @@ const alphabet = {
     "2_endX": 80,
     "2_endY": 115,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "T": {
     // Square
@@ -600,29 +651,30 @@ const alphabet = {
     "1_endY": 67,
     // Line 2
     "2_lineW": 0,
-    "2_startX": 200,
+    "2_startX": 100,
     "2_startY": 0,
-    "2_endX": 200,
+    "2_endX": 100,
     "2_endY": 0,
+    // Line 3
     // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "U": {
     // Square
     "size": 0,
     "degree": 0,
-    "squareX": 0,
-    "squareY": 0,
+    "squareX": 50,
+    "squareY": 100,
     // Line 1
     "1_lineW": 10,
     "1_startX": 70,
@@ -664,17 +716,18 @@ const alphabet = {
     "2_endX": 50,
     "2_endY": 100,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "W": {
     // Square
@@ -695,17 +748,18 @@ const alphabet = {
     "2_endX": 50,
     "2_endY": 150,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "X": {
     // Square
@@ -726,17 +780,18 @@ const alphabet = {
     "2_endX": 19,
     "2_endY": 132,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "Y": {
     // Square
@@ -788,17 +843,18 @@ const alphabet = {
     "2_endX": 65,
     "2_endY": 130,
     // Line 3
+    // Line 3
     "3_lineW": 0,
     "3_startX": 0,
-    "3_startY": 0,
+    "3_startY": 200,
     "3_endX": 0,
-    "3_endY": 0,
+    "3_endY": 200,
     // Line 4
-    "4_lineW": 0,
-    "4_startX": 0,
-    "4_startY": 0,
-    "4_endX": 0,
-    "4_endY": 0,
+   "4_lineW": 0,
+    "4_startX": 100,
+    "4_startY": 200,
+    "4_endX": 100,
+    "4_endY": 200,
   },
   "0": {
     "size": 40,

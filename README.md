@@ -26,3 +26,10 @@ next:
 - design numbers
 - personalise colours
 - edit interpolation
+2149-2300
+completed:
+- Interpolation is refined
+- "default" character created.
+next:
+- design numbers
+- change colours
