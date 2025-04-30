@@ -11,6 +11,40 @@ The three parameters per letter:
   * `offsetx` : x offset of the second circle relative to the first one
   * `offsety` : y offset of the second circle relative to the first one
 
+27/03/25 - 1042-1124
+experimented on:
+- the letter "A" on "sketch.js"
+  - size
+  - rect(Mode)
+  - posX and posY
+  - added, size2, pos2y
+
+01/04/25 - 1118
+completed:
+- changed from orignal pattern to squares and lines.
+- sketch.js A,B, and C.
+started letters.js "A" and "B"
+2322
+- adjusted rectMode
+- added difderent sizes to square
+completed:
+- letters: "A" "B" "C"
+
+03/04/25 1132
+- added/updated "letterData" to "draw_letters.js"
+- updated variable names in "letters.js"
+- organised code with comments
+completed:
+letters.js
+- "D" "E" "F" "G"
+
+08/04/25 1056
+- added/updated "letterData" to "draw_letters.js"
+- added "default code" for the drawing element not drawn
+completed:
+letters.js
+- "H" "I" "J" "K" "L" "M" "N"
+
 10/04/25 - 0947-1134
 - Created 'o' 'p' 'q' 'r' 's' 't' 'u' 'v' 'w' 'x'
   - struggling with 'y'
