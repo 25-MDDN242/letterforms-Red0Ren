@@ -33,3 +33,9 @@ completed:
 next:
 - design numbers
 - change colours
+30/04/25 - 2310-0025
+completed:
+- numbers designed
+- changed a few colours
+improvements:
+- background/theme ideas

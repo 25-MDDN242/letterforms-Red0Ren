@@ -1,12 +1,12 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#acf2e7";
-var systemLineColor = "#000090";
+var systemBackgroundColor = "#f2f0f0";
+var systemLineColor = "#04167d";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
-const darkGreen = "#26b29d";
+const darkGreen = "#06a106";
 const lightGreen = "#30dfc4";
-const strokeColor = "#0a2d27";
+const strokeColor = "#383b38";
 
 /*
  * Draw the letter given the letterData
@@ -31,8 +31,8 @@ function drawLetter(letterData) {
   let line1_W = letterData["1_lineW"];
   let line1_startX = letterData["1_startX"];
   let line1_startY = letterData["1_startY"];
-  let line1_endX = letterData["1_endX"];//
-  let line1_endY = letterData["1_endY"];//
+  let line1_endX = letterData["1_endX"];
+  let line1_endY = letterData["1_endY"];
   // line 2
   let line2_W = letterData["2_lineW"];
   let line2_startX = letterData["2_startX"];
