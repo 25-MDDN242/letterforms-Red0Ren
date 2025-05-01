@@ -5,9 +5,35 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["size",       0, 100],
-  ["offsetx",  -30,  30],
-  ["offsety", -100, 100]
+  // Square
+  ["size", 0, 100],
+  ["degree", 0, 359],
+  ["squareX", 0, 100],
+  ["squareY", 0, 200],
+  // Line 1
+  ["1_lineW", 0, 15],
+  ["1_startX", 0, 100],
+  ["1_startY", 0, 200],
+  ["1_endX", 0, 100],
+  ["1_endY", 0, 200],
+  // Line 2
+  ["2_lineW", 0, 15],
+  ["2_startX", 0, 100],
+  ["2_startY", 0, 200],
+  ["2_endX", 0, 100],
+  ["2_endY", 0, 200],
+  // Line 3
+  ["3_lineW", 0, 15],
+  ["3_startX", 0, 100],
+  ["3_startY", 0, 200],
+  ["3_endX", 0, 100],
+  ["3_endY", 0, 200],
+  // Line 4
+  ["4_lineW", 0, 15],
+  ["4_startX", 0, 100],
+  ["4_startY", 0, 200],
+  ["4_endX", 0, 100],
+  ["4_endY", 0, 200]
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.

@@ -1,12 +1,12 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#f2f0f0";
+var systemBackgroundColor = "#B3EBF2";
 var systemLineColor = "#04167d";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
 const darkGreen = "#06a106";
-const lightGreen = "#30dfc4";
-const strokeColor = "#383b38";
+const lightGreen = "#77DD77";
+const strokeColor = "#1D1C1A";
 
 /*
  * Draw the letter given the letterData
@@ -62,8 +62,12 @@ function drawLetter(letterData) {
   push(); // isolate transformations
   rotate(squareDegree);
   strokeWeight(4);
-  fill(darkGreen);
-  square(squareX, squareY, squareSize);
+  fill(lightGreen);
+  if(squareSize == 0){
+    square(squareX, squareY, squareSize);
+  } else {
+  square(squareX, squareY, squareSize, 4);
+  }
   pop();
   
   // Lines

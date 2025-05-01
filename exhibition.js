@@ -36,9 +36,9 @@ let secondsPerWord = 8;
 let curSwapWord = 0;
 
 var defaultSwapWords = [
-  "ACTUALLY",
-  "1234567?",
-  "EXPECTED",
+  ".THERE..",
+  "ARE...NO",
+  "ACCIDENT",
   "PROPERTY",
   "ADDITION",
   "FOLLOWED",
@@ -75,22 +75,20 @@ var defaultSwapWords = [
   "STUDENTS",
   "DECISION",
   "POSSIBLE",
-  "OoGWAY??",
+  "[OOGWAY]",
   "DIRECTLY",
   "09112001",
   "THINKING",
   "DISTRICT",
-  "PROBABLY",
+  ".NOODLES.",
   "TOGETHER",
-  "ECONOMIC",
+  "READABLE",
   "PROBLEMS",
-  "TRAINING",
-  "EVIDENCE",
-  "PROGRAMS"
+  "TRAINING"
 ]
 
 const interpolation_is_on = (typeof interpolate_letter === "function")
-
+var tree;
 function setup () {
   // create the drawing canvas, save the canvas element
   main_canvas = createCanvas(canvasWidth, canvasHeight);
@@ -110,6 +108,7 @@ function setup () {
   for(let i=0; i<first_word.length; i++) {
     chosenLetters.push(first_word[i]);
   }
+tree = loadImage("images/Peach Tree.png");
 }
 
 function getCharacterInterpolationObj(percent, oldObj, newObj) {
@@ -211,13 +210,18 @@ function draw () {
       }
     }
   }
-
+  
+  //Background stuff
   background(systemBackgroundColor);
-
+  fill(darkGreen);
+  noStroke();
+  rect(0,460, 960,40);
+  image(tree, 100,100, 900,400);
+  
   // shorthand variables to allow margin
   var o = 20
   var w2 = width - 2 * o
-  var h2 = height - 2 * o
+  var h2 = height - 2 * o -250
   for(var i=0; i<8; i++) {
     // see if animation should be turned off
     if(chosenIsAnimating[i] && chosenCurAnimationFrame[i] >= chosenNumAnimationFrames) {
